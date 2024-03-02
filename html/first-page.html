@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Signup</title>
+  <style>
+    body {
+      font-family: 'Source Code Pro', monospace;
+      background: linear-gradient(to right, #3494e6, #ec6ead);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    h1:hover {
+      color: #ec6ead;
+      text-shadow: 0 0 10px rgba(236, 110, 173, 0.8);
+    }
+
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .option {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      padding: 40px;
+      width: 200px;
+      transition: box-shadow 0.3s, background-color 0.3s;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .option:hover {
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+      background-color: #f2f2f2;
+    }
+
+    .option h2 {
+      text-align: center;
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .option p {
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+<h1 onclick="location.href='index.html';">Online Money Transfer</h1>
+
+<div class="options-container">
+  <div class="option" onclick="location.href='sign-in.html';">
+    <h2>Sign In</h2>
+    <p>Already have an account? Sign in here.</p>
+  </div>
+
+  <div class="option" onclick="location.href='pre-sign-up.html';">
+    <h2>Sign Up</h2>
+    <p>Don't have an account? Sign up now.</p>
+  </div>
+</div>
+
+</body>
+</html>

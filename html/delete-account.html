@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <link rel="stylesheet" href="../CSS/toast.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-image: url("background.jpg");
+        }
+        .container {
+            max-width: 400px;
+            height: 270px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #signup-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        .btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Delete Account</h2>
+        <form id="deleteAccountForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button id="signup-btn" onclick="delete_account()">Delete Account</button>
+        </form>
+    </div>
+
+    <!-- <script>
+        document.getElementById('deleteAccountForm').addEventListener('submit', function(event) {
+            // Perform account deletion logic here
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Placeholder for actual deletion logic
+            alert('Deleting account for email: ' + email);
+            
+            event.preventDefault(); // Prevent form submission
+        });
+    </script> -->
+    <script src="../JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../CSS/toast.css">
+    <style>
+        body {
+            font-family: 'Source Code Pro', monospace;
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .verification-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 40px;
+            width: 400px;
+        }
+
+        .verification-header {
+            background: linear-gradient(to right, #3494e6, #ec6ead);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+        }
+
+        .verification-header h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:hover,
+        .form-group input:focus {
+            border-color: #3494e6;
+            box-shadow: 0 0 10px rgba(52, 148, 230, 0.5);
+        }
+
+        .form-group .warning {
+            color: red;
+            font-size: 16px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #3494e6;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #3071a9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="verification-container">
+        <div class="verification-header">
+            <h2>Email Verification</h2>
+        </div>
+        <form id="verification-form">
+            <div class="form-group">
+                <label for="verification-code">Enter Verification Code:</label>
+                <input type="text" id="verification-code" name="verification-code" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <input value="Verify Code" class="btn btn-primary btn-block" onclick="signup_usercheck(event)">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('verification-form').addEventListener('submit', function (event) {
+
+
+            event.preventDefault();
+        });
+    </script>
+<script src="../JS/login.js"></script>
+
+</body>
+</html>

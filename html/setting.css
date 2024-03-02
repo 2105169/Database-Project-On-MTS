@@ -1,0 +1,61 @@
+/* setting.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url("background.jpg");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styles for Update password section */
+.update {
+    background-color: #2e9470;
+    padding: 20px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.update h2 {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Styles for Delete account section */
+.delete {
+    background-color: #2e9470;
+    padding: 20px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.delete h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    background-color: #2e9470;
+    padding: 20px;
+    margin-bottom:20px;
+    margin-left: 100px;
+    margin-right: 200px;
+    border-radius: 200px;
+    text-align: center;
+}
+
+.back h2{
+    margin: 0;
+    padding: 0;
+}

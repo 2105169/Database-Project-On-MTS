@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="../JS/login.js" defer>
+   
+    </script>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <ul class="menu">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-timeline"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5501/html/setting.html">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="../html/pre-sign-up.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <img src="../dulal.png" alt="" onclick="account()">
+            </div>
+        </div>
+
+        <div class="balance-container">
+            <div class="header--wrapper" style="height: 60px;position: relative; left: 0%;">
+                <h1 id="balance-text">Balance: <span id="userBalance"> Taka</h1>
+                
+            </div>
+        </div>
+
+
+
+        <div class="options-container">
+            <a href="http://127.0.0.1:5501/html/send_money.html">
+            <div class="option"  style="position:absolute;top:25%;left: 1%;border-radius: 20px;width: 215px; height: 215px;">
+               
+                <i class="fa-solid fa-comments-dollar" style="position: relative; top:10px"></i>
+                <h2>Send Money</h2>
+                <br>
+                <br>
+                <p>Send Money To Another Account</p>
+               
+            </div></a>
+
+            <a href="http://127.0.0.1:5501/html/cashin.html">
+                <div class="option" style="position:absolute;top:25%; left: 17%;border-radius: 20px;width: 215px; height: 215px;">
+                  <i class="fa-solid fa-hand-holding-dollar" style="position: relative;top:10px"></i>
+                  <h2>Cash In</h2>
+                  <br>
+                  <br>
+                </div>
+            </a>
+          
+            <a href="http://127.0.0.1:5501/html/cashout.html">
+            <div class="option" style="position:absolute;top:25%; left: 33%;border-radius: 20px;width: 215px; height: 215px;">
+              <i class="fa-solid fa-hand-holding-dollar" style="position: relative;top:10px"></i>
+              <h2>Cash Out</h2>
+              <br>
+              <br>
+              <p>Receive Hand Cash</p>
+            </div>
+            </a>
+
+            
+
+            <a href="http://127.0.0.1:5501/html/paybill_agent.html">
+            <div class="option" style="position:absolute;top:25%; left: 49%;border-radius: 15px;width: 215px; height: 215px;">
+                <i class="fa-solid fa-money-bill"  style="position:absolute;top:10px"></i>
+                <h2>Make Payment</h2>
+                <br>
+                <br>
+                <p>Pay Bill</p>
+            </div>
+            </a>
+          </div>
+          
+          <a href="http://127.0.0.1:5501/html/shopping_agent.html">
+          <div class="option" style="position:absolute;top:25%; left: 65%;border-radius: 20px;width: 215px; height: 215px;">
+            <i class="fa-solid fa-cart-shopping" style="position:absolute;top:10px"></i>
+            <h2>Shopping</h2>
+            <br>
+            <br>
+            <p>Buy Something Online</p>
+          </div>
+        </a>
+
+
+        <div class="email-container">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1 id="Email">Email: <span id="userEmail"></span></h1>
+        </div>
+
+      </div>
+    </div>
+
+
+    
+    <script src="../JS/login.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const userEmail = sessionStorage.getItem('userEmail');
+    const userBalance = sessionStorage.getItem('userBalance');
+
+    if (userEmail && userBalance) {
+        document.getElementById('userEmail').innerText = userEmail;
+        document.getElementById('userBalance').innerText = userBalance + " Taka";
+    }
+});
+    </script>
+
+     
+</body>
+</html>

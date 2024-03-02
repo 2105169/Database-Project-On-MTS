@@ -1,0 +1,157 @@
+body{
+    align-items: center;
+    margin:30px;
+    width: 700px;
+    height: 600px;
+    background-size: cover;
+    background-image: url("background.jpg");
+    align-content: center;
+  }
+  
+  
+  .header{
+    background-color: aqua;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .email{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .email label{
+   padding-left: 20px;
+  }
+  
+  .email input{
+    margin: 20px;
+    padding-left: 20px;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+  }
+
+  .email1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .email1 label{
+   padding-left: 20px;
+  }
+  
+  .email1 input{
+    margin: 20px;
+    padding-left: 20px;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+  }
+  
+
+  
+  .amount{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .amount label{
+    padding-left: 20px;
+  }
+  
+  .amount input{
+    padding-left: 10px;
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  .currentbalance{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  .ramainingbalance{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  .reference{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .reference label{
+    padding: 20px;
+  }
+  
+  .reference input{
+    padding-left: 10px;
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  .password1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .password1 label{
+    padding-left: 20px;
+  }
+  
+  .password1 input{
+    padding-left: 10px;
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  .button1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  
+  .button1 button{
+    width: 100px;
+    margin-left: 80px;
+    margin-right: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction List</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transaction List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Sender</th>
+                <th>Receiver</th>
+                <th>Transaction ID</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="transactionTableBody">
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Sample transaction data (replace this with actual data retrieval)
+        const transactions = [
+            { date: '2024-02-22', sender: 'Alice', receiver: 'Bob', transactionId: '123456', amount: '$100' },
+            { date: '2024-02-21', sender: 'Charlie', receiver: 'David', transactionId: '789012', amount: '$50' },
+            { date: '2024-02-20', sender: 'Eve', receiver: 'Frank', transactionId: '345678', amount: '$200' }
+        ];
+
+        // Function to populate the table with transaction data
+        function populateTable() {
+            const tbody = document.getElementById('transactionTableBody');
+            transactions.forEach(transaction => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${transaction.date}</td>
+                    <td>${transaction.sender}</td>
+                    <td>${transaction.receiver}</td>
+                    <td>${transaction.transactionId}</td>
+                    <td>${transaction.amount}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Populate the table when the page loads
+        window.onload = populateTable;
+    </script>
+</body>
+</html>

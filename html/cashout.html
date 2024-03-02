@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash out</title>
+    <link rel="stylesheet" href="cashout.css">
+</head>
+<body>
+
+
+        <div class="header">
+            <h1>Cash out</h1>
+        </div>
+    
+        <div class="agentmail">
+            
+            <label for="rname">Enter agent email: </label>
+            <input type="text" id="agentmail" name="agentname"><br>
+    
+        </div>
+    
+        <div class="sender">
+            
+            <label for="rname">Enter your email: </label>
+            <input type="text" id="cashout_sender" name="sendername"><br>
+    
+        </div>
+
+        <div class="amountcashout">
+            
+            <label for="amount">Enter amount: </label> 
+            <input type="number" id="amount_cashout" name="amountname">
+            <br>
+        </div>
+    
+        <div class="currentbalance">
+            Your balance: 1000 tk
+        </div>
+        
+    
+        <div class="reference">
+            
+            <label for="reference">Reference: </label>
+            <input type="text" id="reference_cashout" name="reference1"><br>
+        </div>
+    
+        <div class="password1">
+            
+            <label for="password1">Password: </label>
+            <input type="password" id="passwordcashout" name="password3">
+            <br>
+        </div>
+    
+        <div class="button1">
+            <br>
+            <button class="send" id ="cashout_btn" onclick="cashout()">
+                Send
+            </button>
+        
+            <a href="http://127.0.0.1:5501/html/dashboard.html#">
+            <button class="back">
+                Back
+            </button>
+            </a>
+            
+            <br><br>
+        </div>
+
+        <script src="../JS/login.js"></script>
+</body>
+</html>
